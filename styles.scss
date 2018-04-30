@@ -1,0 +1,48 @@
+@import "templateProjectPageHeader";
+
+body,html{
+    background: $HEATWAVE;
+    font-family: $fontBody;
+    color: $NIGHTFALL;
+}
+.btn{
+    width: 2em;
+    height: 2em;
+    border: solid 5px $NIGHTFALL;
+    border-radius: 0;
+    font-size: 6em;
+    padding-top: 10%;
+    margin: 0;
+    color: $HEATWAVE;
+}
+.btn:hover{
+    color: $HEATWAVE;
+}
+.ticTacToe{
+    margin: auto;
+    background-color: $PARADISE;
+    border: solid 5px $NIGHTFALL;
+}
+#win{
+    line-height: 1.5;
+}
+.pulse{
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%{
+        color: $HEATWAVE;
+    }
+    50%{
+        color: $NIGHTFALL;
+    }
+    100%{
+        color: $HEATWAVE;
+    }
+}
+h3{
+    margin-top: 1.8em;
+}
+h4{
+    margin: 1em;
+}
