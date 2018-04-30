@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" type="text/css" href="../styles/bootstrap3.3.7.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap3.3.7.min.css"/>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script type="text/javascript" src="../scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts.js"></script>
+    <script defer type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script defer src="scripts.js"></script>
 </head>
 <body>
 <audio id="Xs_AND_Os">
-    <source type="audio/mpeg" src="../audio/Xs_AND_Os.mp3"/>
+    <source type="audio/mpeg" src="audio/Xs_AND_Os.mp3"/>
 </audio>
 
-<div class="text-center">
-
-    <h1>Tic Tac Toe</h1>
+<header id="tempHeader">
+    <div id="tempPageTitle">Tic Tac Toe</div>
     brought to you by
-    <h2>Hieratikos</h2>
-    <table class="header">
+    <div id="tempAuthor">jordiCombs</div>
+    <table id="tempLogoTable">
         <tr>
-            <td class="left"><hr class="flared"></td>
-            <td class="center"><img class="logoImg" src="../images/NightfallLogo.webp"></td>
-            <td class="right"><hr class="flared"></td>
+            <td id="tempLogoTableLeft"><hr class="flared"></td>
+            <td id="tempLogoTableCenter"><img id="logoImg" src="http://res.cloudinary.com/hieratikos/image/upload/v1492361036/NightfallLogo_ndt9em.png"></td>
+            <td id="tempLogoTableRight"><hr class="flared"></td>
         </tr>
     </table>
+</header>
+
+<div class="text-center">
 
     <h3>
     <label class="radio-inline"><input type="radio" name="optXYRadio" id="idX" value="X">X's</label>
@@ -38,7 +40,7 @@
     <label class="radio-inline"><input type="radio" name="optMusicRadio" id="mOFF" value="Off">Off</label>
     </h4>
     <label id="win">&nbsp;</label>
-    <table>
+    <table class="ticTacToe">
         <tr>
             <td><a class="btn tic" data-x="0" data-y="0" id="0"></a></td>
             <td><a class="btn tic" data-x="0" data-y="1" id="1"></a></td>
