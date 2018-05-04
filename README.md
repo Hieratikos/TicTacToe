@@ -1,0 +1,1 @@
+A Tic Tac Toe project as part of the projects for freeCodeCamp. The algorithm used to check for a win is based on a simple array structure. Each row and column has three positions which win the game if any position reaches a total of three. Add a diagonal and reverse diagonal, and the rest is easy. Be sure to play with the music on.
